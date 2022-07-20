@@ -96,15 +96,29 @@ export default {
         background-color: plum;
     }
 }
+
+// Modificado
+.element_1, .element_5, .element_2, .element_6{
+    grid-column: 1 / 3;
+}
+
+@media (min-width: 768px){
+    .element_1, .element_5, .element_2, .element_6{
+    grid-column: unset;
+    }  
+}
+// 
+
 .element_1, .element_5{
     .producto__numero{
         background-color: skyblue;
     }
 }
 
-
-.element_0, .element_1, .element_2, .element_3{
+@media (min-width: 768px){
+    .element_0, .element_1, .element_2, .element_3{
     grid-column: 1 / 2;
+    }   
 }
 
 </style>
