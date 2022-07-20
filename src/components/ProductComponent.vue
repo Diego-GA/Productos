@@ -38,7 +38,7 @@ export default {
     computed: {
 
         shortDescription(){
-            return ( this.producto.descripcion.length > 80 )? this.producto.descripcion.substring(0,80) + '...' : this.producto.descripcion 
+            return ( this.producto.descripcion.length > 62 )? this.producto.descripcion.substring(0,62) + '...' : this.producto.descripcion 
         },
     },
     methods: {

@@ -1,6 +1,6 @@
 <template>
   
-    <h1 class="text-center mb-5">Layout Products</h1>
+    <h1 class="text-center mb-5">Products Layout</h1>
 
     <div class="grid">
 
@@ -26,7 +26,7 @@ export default {
         }
     },
     components: {
-        ProductComponent: defineAsyncComponent( () => import('@/views/ProductComponent'))
+        ProductComponent: defineAsyncComponent( () => import('@/components/ProductComponent'))
     },
     computed: {
         ...mapGetters({

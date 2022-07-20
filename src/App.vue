@@ -16,7 +16,7 @@ import { defineAsyncComponent } from '@vue/runtime-core'
 
 export default {
   components: {
-    MyFooter: defineAsyncComponent( () => import('@/views/MyFooter.vue'))
+    MyFooter: defineAsyncComponent( () => import('@/components/MyFooter.vue'))
   }
 }
 
