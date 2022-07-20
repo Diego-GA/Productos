@@ -1,30 +1,48 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link :to="{name: 'productos'}">Productos</router-link>
   </nav>
   <router-view/>
+
+
+  <MyFooter />
+
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+<script>
+import { defineAsyncComponent } from '@vue/runtime-core'
+
+export default {
+  components: {
+    MyFooter: defineAsyncComponent( () => import('@/views/MyFooter.vue'))
+  }
+}
+
+
+</script>
+
+
+
+
+
+<style lang="scss" scoped>
+
+nav{
   text-align: center;
-  color: #2c3e50;
+  padding: 20px 30px;
 }
 
-nav {
-  padding: 30px;
+.router-link-exact-active{
+  color: green;
 }
 
-nav a {
+a{
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px 0;
   font-weight: bold;
-  color: #2c3e50;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
