@@ -1,4 +1,5 @@
-# test
+# Test VueJs
+###Notas: La rama main contiene los primeros dos ejercicios, en la otra rama (ejercicio3 y 4) viene con el layour que se indicó
 
 ## Project setup
 ```
