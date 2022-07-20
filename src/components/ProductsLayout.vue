@@ -45,14 +45,10 @@ export default {
     width: 90%;
     margin: 0 auto;
     gap: 30px;
-}
+    grid-auto-flow: dense;
 
-@media (min-width: 768px){
-    .grid{
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-flow: dense;
-    }
+    // modificado
+    grid-template-columns: repeat(2, 1fr);
 }
-
 
 </style>
