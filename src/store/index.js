@@ -60,7 +60,12 @@ export default createStore({
   mutations: {
     
     votacion( state, id ){
-      state.productos[id].voto++;
+      // state.productos[id].voto++;
+
+
+      state.productos.forEach( (element, indice) => {
+        if( element.id === id ) state.productos[indice].voto++
+      })
     }
 
   },
